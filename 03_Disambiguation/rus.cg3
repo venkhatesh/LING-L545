@@ -1,0 +1,15 @@
+DELIMITERS = "<.>" "<..>" "<...>" "<!>" "<?>" "<¶>" ;
+
+LIST Prop =  np Prop ;
+LIST Pron =  prn Pron ;
+LIST Adv =  adv Adv ;
+LIST Pred =  pred Pred ;
+LIST Pr =  pr Pr ;
+LIST Nom = Nom nom  ;
+
+SECTION
+
+REMOVE Pr IF (-1C Pr) ;
+REMOVE Pr IF (1C Pr) ;
+REMOVE Nom IF (-1C Pr) ;
+
